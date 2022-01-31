@@ -1,12 +1,12 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6, p, li{
     color: #444;
 }
-
 
 body{
     border-top: 10px solid #0E99AC;
@@ -16,7 +16,7 @@ body{
 }
 
 .container{
-    width: 800px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -25,11 +25,28 @@ body{
     margin: 0px;
     padding: 20px 40px;
     margin-bottom: 60px;
-    
+    clear: unset;
+}
+
+nav a {
+    margin-right: 15px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+nav a:hover{
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 article{
     margin-bottom: 60px;
+}
+
+article{
+    width: 60%;
+    float: left;
 }
 
 article header p{
@@ -56,6 +73,11 @@ h2::after{
 .post-img{
     width: 100%;
     height: auto;
+}
+
+.author{
+    margin: 5px 0px 0px 10px;
+    font-size: 18px;
 }
 
 h1{
@@ -128,9 +150,6 @@ aside h4{
     text-transform: uppercase;
 }
 
-#author-posts{
-    list-style:none;
-}
 
 aside{
     background-color: #f7f7f7;
@@ -140,21 +159,9 @@ aside{
     width: 500px;
 }
 
-nav a {
-    margin-right: 15px;
-    margin-top: 10px;
-    display: inline-block;
-}
-
-nav a:hover{
-    color: red;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-.like-container{
-    bottom: 2;
-    right: 2;
+#author-posts{
+    list-style:none;
+    margin: 0;
 }
 
 button{
@@ -164,5 +171,63 @@ button{
     border-radius: 5px;
     bottom: 50px;
     right: 50px;
+}
+
+.page-title{
+    float: left;
+}
+
+nav{
+    float: right;
+}
+
+.author-img, .author{
+    float: left;
+    margin-bottom: 10px;
+}
+
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+aside{
+    width: 30%;
+    float: right;
+    padding: 40px;
+}
+
+.posts-title{
+    margin-bottom: 40px;
+}
+
+footer{
+    clear: both;
+}
+
+#author-posts li{
+    float: left;
+}
+
+.related-post-img{
+    float: left;
+}
+
+.related-content{
+    float: left;
+    width: 190px;
+    margin-left: 10px;
+}
+
+.related-post-title{
+
+    font-size: 18px;
+}
+
+.related-post-author{
+
+    font-size: 15px;
+    font-weight: normal;
 }
 
