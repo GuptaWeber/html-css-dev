@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <title>The Basic Language of the Web: HTML</title>
-    <link href="./style.css" rel="stylesheet" />
+    <!-- <link href="./style.css" rel="stylesheet" /> Layout using Floats -->
+    <link href="./style-flexbox.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -21,11 +22,13 @@
       </nav>
     </header>
 
+    <div class="content">
     <article>
       <header class="post-header">
         <h2>The Basic Language of the Web: HTML</h2>
 
-        <img
+        <div class="post-author">
+          <img
           src="img/laura-jones.jpg"
           alt="Headshot of Laura Jones"
           height="50"
@@ -33,8 +36,10 @@
           class="author-img"
         />
 
-        <p class="author">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+        <p id="author">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
 
+        </div>
+       
         <img
           src="img/post-img.jpg"
           alt="HTML code on a screen"
@@ -110,27 +115,28 @@
       <h4 class="posts-title">Related posts</h4>
 
       <ul id="author-posts">
-        <li>
+        <li class="related-post">
           <img
-            src="img/related-1.jpg"
-            alt="Person programming"
-            width="75"
-            height="75"
-            class="related-post-img"
+          src="img/related-1.jpg"
+          alt="Person programming"
+          width="75"
+          height="75"
+          class="related-post-img"
           />
+          
           <div class="related-content">
           <a href="#" class="related-post-title">How to Learn Web Development</a>
           <p class="related-post-author">By Jonas Schmedtmann</p>
         </div>
         </li>
-        <li>
+        <li class="related-post">
           <img src="img/related-2.jpg" alt="Lightning" width="75" height="75" class="related-post-img" />
           <div class="related-content">
           <a href="#" class="related-post-title">The Unknown Powers of CSS</a>
           <p class="related-post-author">By Jim Dillon</p>
         </div>
         </li>
-        <li>
+        <li class="related-post">
           <img
           src="img/related-3.jpg"
           alt="JavaScript code on a screen"
@@ -145,9 +151,10 @@
         </li>
       </ul>
     </aside>
+    </div>
 
     <footer>
-        <p>Copyright &copy; 2027 by The Code Magazine.</p>
+        <p id="copyright">Copyright &copy; 2027 by The Code Magazine.</p>
     </footer>
     </div>
 
