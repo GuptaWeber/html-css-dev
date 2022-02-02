@@ -1,0 +1,214 @@
+<html>
+
+<head>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 900px;
+            margin: 50px auto;
+            border: 5px solid black;
+            position: relative;
+        }
+
+        .container::before {
+            content: "SALE";
+            font-weight: bold;
+            color: white;
+            letter-spacing: 2px;
+            position: absolute;
+            background: red;
+            padding: 5px 10px;
+            top: -19px;
+            left: -35px;
+        }
+
+        .title,
+        .shipping,
+        .side-heading,
+        button {
+            text-transform: uppercase;
+        }
+
+        .title {
+            text-align: center;
+            background: #e6e6e6;
+            padding: 15px;
+        }
+
+        .product-image {
+            width: 260px;
+            /*   margin-bottom: 10px; */
+        }
+
+        .price {
+            font-size: 31px;
+        }
+
+        .shipping {
+            font-size: 12px;
+            margin-bottom: 0px;
+        }
+
+        .side-heading {
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .more-info {
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        a:link {
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: square;
+            margin: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        button {
+            color: white;
+            border: none;
+            cursor: pointer;
+            background: #000;
+            padding: 15px;
+            width: 100%;
+            font-size: 15px;
+            border-top: 4px solid black;
+        }
+
+        button:hover {
+            color: black;
+            background: #fff;
+        }
+
+        .product-colors {
+            display: flex;
+            gap: 10px;
+        }
+
+        .color {
+            width: 20px;
+            height: 20px;
+
+
+        }
+
+        .black-box {
+            background: black;
+        }
+
+        .blue-box {
+            background: blue;
+        }
+
+        .red-box {
+            background: red;
+        }
+
+        .yellow-box {
+            background: #ffe70e;
+        }
+
+        .green-box {
+            background: green;
+        }
+
+        .brown-box {
+            background: brown;
+        }
+
+
+        .row {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .price-internal {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+
+        }
+
+        .details-container {
+            flex: 1;
+        }
+
+        .price-container {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="title">Converse Chuck Taylor All Star Low Top </h2>
+
+        <div class="row">
+
+            <img class="product-image" src='https://i.imgur.com/ZrTU3VK.jpeg' />
+
+            <div class="price-container">
+
+                <div class="price-internal">
+                    <h1 class="price"> $65.00 </h1>
+                    <p class="shipping"> Free Shipping </p>
+                </div>
+
+                <p class="desc">Ready to dress up or down, these classic canvas Chucks are an everyday wardrobe staple.
+                </p>
+
+                <a class="more-info" href="#">More Information &#8594;</a>
+
+                <div class="product-colors">
+                    <div class="color black-box"></div>
+                    <div class="color blue-box"></div>
+                    <div class="color red-box"></div>
+                    <div class="color yellow-box"></div>
+                    <div class="color green-box"></div>
+                    <div class="color brown-box"></div>
+                </div>
+            </div>
+
+            <div class="details-container">
+                <p class="side-heading"> Product Details </p>
+
+                <ul>
+                    <li>Lightweight, durable canvas sneaker</li>
+                    <li>Lightly Padded footbed for added comfort</li>
+                    <li>Iconic Chuck Taylor ankie patch.</li>
+                </ul>
+            </div>
+        </div>
+        <button>Add to Cart</button>
+    </div>
+
+</body>
+
+</html>
