@@ -26,7 +26,7 @@
     padding-left: 40px;
     padding-right: 40px; */
     padding: 20px 40px;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
     /* height: 80px; */
   }
   
@@ -35,10 +35,9 @@
     /* text-align: center; */
   }
   
-  article {
+  /* article {
     margin-bottom: 60px;
-    width: 70%;
-  }
+  } */
   
   .post-header {
     margin-bottom: 40px;
@@ -52,7 +51,6 @@
     /* padding-top: 50px;
     padding-bottom: 50px; */
     padding: 50px 0;
-    width: 30%;
   }
   
   /* SMALLER ELEMENTS */
@@ -285,26 +283,27 @@
   
 
   /*---- FLEXBOX ----*/
-
   .top-header{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-
+  
   .post-author{
-      display: flex;
-      gap: 0px 20px;
-      align-items: center;
-      margin-bottom: 10px;
+    display: flex;
+    gap: 0px 20px;
+    align-items: center;
+    margin-bottom: 10px;
   }
+  /* 
 
   .content{
       display: flex;
       align-items: flex-start;
       gap: 0 50px;
   }
-
+  
+  */
   aside{
       display: flex;
       flex-direction: column;
@@ -315,6 +314,29 @@
       display: flex;
       gap: 0px 10px;
       align-items: center;
+      
+    } 
+    
+     /*---- CSS GRID ----*/
 
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    align-items: start;
+    column-gap: 60px;
+    row-gap: 60px;
+    /* grid-template-rows: 150px 500px; */
   }
 
+  .top-header{
+    grid-column: 1/-1;
+  }
+
+  .aside{
+    align-self: start;
+    justify-self: start;
+  }
+
+  .footer{
+    grid-column: 1/-1;
+  }
