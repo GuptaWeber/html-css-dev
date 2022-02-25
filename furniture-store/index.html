@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lisbon Chair Store</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -14,9 +15,7 @@
                 <p>In a small shop in the heart of Lisbon, we spend our days relentlessly perfecting the chair. The result is a perfect blend of beauty and comfort, that will have a lasting impact on your health.</p>
                 <a href="#">Shop Chairs</a>
             </div>
-            <div class="hero-image">
-                <img src="images/hero.jpg" alt="">
-            </div>
+                <img class="hero-image" src="images/hero.jpg" alt="hero-image">
         </section>
         <section id="features">
             <h3 class="features-title">What makes our chairs special</h3>
@@ -51,55 +50,66 @@
             <img src="./images/customers.jpg" alt="customers-testimonials">
             <div class="testimonial">
                 <h3>"We couldn't live without these chairs anymore"</h3>
-                <p title="testimonial-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellat at, nesciunt quia cum minima ipsum culpa totam sapiente recusandae earum debitis doloribus in quasi voluptatibus!</p>
-                <p>-- Mary and Sarah Johnson</p>
+                <p class="testimonial-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellat at, nesciunt quia cum minima ipsum culpa totam sapiente recusandae earum debitis doloribus in quasi voluptatibus!</p>
+                <p> -- Mary and Sarah Johnson</p>
             </div>
         </section>
         <section id="products">
             <h3>Our bestselling chairs</h3>
-            <div class="product">
-                <img src="./images/chair-1.jpg" alt="chair-1">
-                <p class="product-title">
-                    The Laid Back
-                </p>
-                <p>Leisure and relaxing</p>
-                <p>Comfortable for 4h</p>
-                <p>Vegan leather</p>
-                <p>Weighs 16 kg</p>
-                <div class="product-price">
-                    <p>250€</p>
-                    <a href="#">Add to cart</a>
+            <div class="products-part">
+                <div class="product">
+                    <img src="./images/chair-1.jpg" alt="chair-1">
+                    <div class="product-content">
+                        <p class="product-title">
+                            The Laid Back
+                        </p>
+                        <p>Leisure and relaxing</p>
+                        <p>Comfortable for 4h</p>
+                        <p>Vegan leather</p>
+                        <p>Weighs 16 kg</p>
+                        <div class="product-price">
+                            <p>250€</p>
+                            <a href="#">Add to cart</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="product">
-                <img src="./images/chair-2.jpg" alt="chair-1">
-                <p class="product-title">
-                    The Worker Bee
-                </p>
-                <p>Work</p>
-                <p>Comfortable for 8h</p>
-                <p>Vegan leather</p>
-                <p>Weighs 22 kg</p>
-                <div class="product-price">
-                    <p>525€</p>
-                    <a href="#">Add to cart</a>
+                <div class="product">
+                    <img src="./images/chair-2.jpg" alt="chair-1">
+                    <div class="product-content">
+                        <p class="product-title">
+                            The Worker Bee
+                        </p>
+                        <p>Work</p>
+                        <p>Comfortable for 8h</p>
+                        <p>Vegan leather</p>
+                        <p>Weighs 22 kg</p>
+                        <div class="product-price">
+                            <p>525€</p>
+                            <a href="#">Add to cart</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="product">
-                <img src="./images/chair-3.jpg" alt="chair-1">
-                <p class="product-title">
-                    The Chair 4/2
-                </p>
-                <p>Leisure and relaxing</p>
-                <p>Comfortable all day!</p>
-                <p>Organic coton</p>
-                <p>Weighs 80 kg</p>
-                <div class="product-price">
-                    <p>1450€</p>
-                    <a href="#">Add to cart</a>
+                <div class="product">
+                    <img src="./images/chair-3.jpg" alt="chair-1">
+                    <div class="product-content">
+                        <p class="product-title">
+                            The Chair 4/2
+                        </p>
+                        <p>Leisure and relaxing</p>
+                        <p>Comfortable all day!</p>
+                        <p>Organic coton</p>
+                        <p>Weighs 80 kg</p>
+                        <div class="product-price">
+                            <p>1450€</p>
+                            <a href="#">Add to cart</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        <p id="copyright">
+            Copyright © 2027 by Jonas Schmedtmann. Part of "Build Responsive Real-World Websites with HTML and CSS" online course. Use for learning purposes only.
+        </p>
     </div>
 </body>
 </html>
