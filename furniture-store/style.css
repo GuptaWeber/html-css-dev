@@ -1,3 +1,12 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+
 *{
     margin: 0;
     padding: 0;
@@ -31,18 +40,27 @@ h1,h2,h3,h4,h5,h6{
 }
 
 h2{
-    font-size: 33px;
+    font-size: 44px;
     margin-bottom: 20px;
+    line-height: 1.1;
+    letter-spacing: -1px;
 }
 
-p {
+.hero-content p {
     margin-bottom: 20px;
-    line-height: 1.2;
+    font-size: 18px;
+    line-height: 1.7;
 }
 
 /*  FEATURES SECTION */
+
+h3{
+    font-size: 36px;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
 .features-title{
-    font-size: 25px;
     margin-bottom: 50px;
 }
 
@@ -53,8 +71,13 @@ p {
 }
 
 .feature-title{
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
+}
+
+.feature p{
+    line-height: 1.7;
 }
 
 #testimonials{
@@ -64,14 +87,19 @@ p {
     gap: 75px;
 }
 
+#testimonials h3{
+    font-size: 24px;
+}
+
+#testimonials p{
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
 #testimonials img{
     height: 230px;
 }
 
-h3{
-    font-size: 25px;
-    margin-bottom: 20px;
-}
 
 #testimonials .testimonial-desc{
     font-style: italic;
@@ -99,11 +127,21 @@ h3{
     font-weight: bold;
 }
 
+.product-title{
+    font-size: 20px;
+}
+
 .product-content{
     padding: 30px;
+    line-height: 2.5;
 }
 
 .product-price{
     display: flex;
     justify-content: space-between;
+    font-size: 20px;
+}
+
+#copyright{
+    font-size: 14px;
 }
