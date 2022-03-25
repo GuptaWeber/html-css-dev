@@ -132,6 +132,7 @@ h3{
 
 #testimonials h3{
     font-size: 24px;
+
 }
 
 #testimonials p{
@@ -172,6 +173,13 @@ h3{
 
 .product-title{
     font-size: 20px;
+}
+
+
+.chair-icon{
+    width: 24px;
+    height: 24px;
+    stroke: #087f5b;
 }
 
 .product-content{
