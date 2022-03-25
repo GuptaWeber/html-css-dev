@@ -6,6 +6,13 @@ FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
 
+/*
+COLORS
+GREEN: #087f5b
+LIGHT GREEN: #12b886
+GREY: #343a40
+*/
+
 
 *{
     margin: 0;
@@ -15,6 +22,8 @@ FONT SIZE SYSTEM (px)
 
 body{
     font-family: 'Inter', sans-serif;
+    color: #343a40;
+    border-bottom: 8px solid #087f5b;
 }
 
 .container{
@@ -47,11 +56,34 @@ h2{
 }
 
 .hero-content p {
-    margin-bottom: 20px;
+    margin-bottom: 48px;
     font-size: 18px;
     line-height: 1.7;
 }
 
+.btn:link, .btn:visited{
+    color: white;
+    font-weight: 600;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #087f5b;
+
+}
+
+.btn:hover, .btn:active{
+    background-color: #099268;
+}
+
+.btn--big{
+    font-size: 18px;
+    padding: 16px 32px;
+}
+
+.btn--small{
+    font-size: 14px;
+    padding: 8px 12px;
+}
 /*  FEATURES SECTION */
 
 h3{
@@ -80,11 +112,22 @@ h3{
     line-height: 1.7;
 }
 
+.feature-icon{
+    height: 32px;
+    width: 32px;
+    stroke: #087f5b;
+    margin-bottom: 16px;
+}
+
 #testimonials{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 75px;
+    background-color: #087f5b;
+    padding: 24px;
+    border-radius: 25px;
+    color: white;
 }
 
 #testimonials h3{
@@ -133,15 +176,23 @@ h3{
 
 .product-content{
     padding: 30px;
-    line-height: 2.5;
+    line-height: 3.5;
+}
+
+.product-content p{
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .product-price{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 20px;
 }
 
 #copyright{
     font-size: 14px;
+    color: #adb5bd;
 }
