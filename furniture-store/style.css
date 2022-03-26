@@ -68,7 +68,12 @@ h2{
     text-decoration: none;
     text-transform: uppercase;
     background-color: #087f5b;
+    border-radius: 100px;
 
+}
+
+img{
+    border-radius: 12px;
 }
 
 .btn:hover, .btn:active{
@@ -126,7 +131,7 @@ h3{
     gap: 75px;
     background-color: #087f5b;
     padding: 24px;
-    border-radius: 25px;
+    border-radius: 12px;
     color: white;
 }
 
@@ -165,6 +170,12 @@ h3{
 
 .product{
    align-content: center;
+   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+   border-radius: 12px;
+}
+
+.product img{
+    border-radius: 12px 12px 0px 0px;
 }
 
 .product .product-title, .product-price p{
