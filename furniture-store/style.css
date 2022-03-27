@@ -33,11 +33,16 @@ body{
     row-gap: 50px;
 }
 
+section{
+    margin-bottom: 80px;
+}
+
 #hero-section{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 75px;
+    margin-top: 48px;
 }
 
 .hero-image{
@@ -50,7 +55,7 @@ h1,h2,h3,h4,h5,h6{
 
 h2{
     font-size: 44px;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
     line-height: 1.1;
     letter-spacing: -1px;
 }
@@ -110,7 +115,7 @@ h3{
 .feature-title{
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .feature p{
@@ -121,7 +126,7 @@ h3{
     height: 32px;
     width: 32px;
     stroke: #087f5b;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
 }
 
 #testimonials{
@@ -152,6 +157,11 @@ h3{
 
 #testimonials .testimonial-desc{
     font-style: italic;
+    color: #e6fcf5;
+}
+
+.testimonial-author{
+    color: #c3fae8;
 }
 
 #products h3{
@@ -182,11 +192,6 @@ h3{
     font-weight: bold;
 }
 
-.product-title{
-    font-size: 20px;
-}
-
-
 .chair-icon{
     width: 24px;
     height: 24px;
@@ -194,14 +199,19 @@ h3{
 }
 
 .product-content{
-    padding: 30px;
-    line-height: 3.5;
+    padding: 32px;
 }
 
 .product-content p{
     display: flex;
     align-items: center;
+    margin-bottom: 16px;
     gap: 20px;
+}
+
+.product-content .product-title{
+    font-size: 20px;
+    margin-bottom: 24px;
 }
 
 .product-price{
@@ -209,6 +219,11 @@ h3{
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
+    margin-top: 48px;
+}
+
+.product-price p{
+    margin-bottom: 0px;
 }
 
 #copyright{
