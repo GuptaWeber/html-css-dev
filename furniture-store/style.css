@@ -108,7 +108,7 @@ h3{
 
 .features-part{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 50px;
 }
 
@@ -170,7 +170,7 @@ h3{
 
 .products-part{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 75px;
 }
 
@@ -229,4 +229,43 @@ h3{
 #copyright{
     font-size: 14px;
     color: #adb5bd;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 550px){
+ 
+    .container{
+        width: 70%;
+        justify-content: center;
+    }
+
+    .products-part{
+        grid-template-columns: repeat(auto-fit, 17.8rem);
+        justify-content: center;
+    }
+    
+    .product-price{
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    #hero-section{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #testimonials{
+        flex-direction: column;
+    }
+
+    #testimonials img{
+        height: 330px;
+    }
+
+    .features-part{
+        grid-template-columns: repeat(auto-fit, 1fr);
+    }
 }
