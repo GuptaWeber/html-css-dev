@@ -1,0 +1,45 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+}
+
+table{
+    margin: 100px auto;
+    border-collapse: collapse;
+    width: 80%;
+    table-layout: fixed;
+}
+
+thead{
+    background-color: #087f5b;
+    color: #e6fcf5;
+}
+
+th, td{
+    padding: 16px;
+}
+
+tbody td{
+    text-align: center;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #f8f9fa;
+}
+
+tbody tr:nth-child(even){
+    background-color: #f1f3f5;
+}
