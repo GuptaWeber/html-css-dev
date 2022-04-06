@@ -36,7 +36,7 @@ FONT SIZE SYSTEM (px)
 
   .top-nav{
     height: 90px;
-    background-color: #5b21b6;
+    background-color: #7048e8;
     display: flex;
     align-items: center;
     padding: 0px 48px;
@@ -49,7 +49,7 @@ FONT SIZE SYSTEM (px)
     font-weight: 700;
     color: white;
     border: none;
-    background-color: #4c1d95;
+    background-color: #5f3dc4;
     cursor: pointer;
   }
 
@@ -58,7 +58,42 @@ FONT SIZE SYSTEM (px)
   }
 
   .email-body{
-    background-color: pink;
+    background-color: #f1f3f5;
     grid-column: 2;
     grid-row: 2;
+    display: grid;
+    grid-template-columns: 400px 1fr 0.3fr;
+  }
+
+  .emails{
+    padding: 24px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    overflow: scroll;
+  }
+
+  .email{
+    width: 100%;
+    flex-shrink: 0;
+    background-color: #ced4da;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .email-view{
+    padding-top: 24px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+  }
+
+  .additional-info{
+    padding-top: 24px;
+    display: flex;
+    justify-content: center;
   }
